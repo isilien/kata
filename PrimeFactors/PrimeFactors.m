@@ -18,26 +18,17 @@
     
     NSMutableArray *primeFactors = [NSMutableArray array];
     
-    if ([number integerValue] > 1) {
+    int quotient = [number integerValue];
+    int divisor = 2; // first prime divisor
+    
+    while (quotient > 1) {
         
-        int quotient = [number integerValue];
-            
-        while (quotient%2 == 0) {
-            [primeFactors addObject:[NSNumber numberWithInt:2]];
-            quotient /= 2;
-            number = [NSNumber numberWithInt:quotient];
+        while (quotient%divisor == 0) {
+            [primeFactors addObject:[NSNumber numberWithInt:divisor]];
+            quotient /= divisor;
         }
-        
-        if (quotient > 1) {            
-            [primeFactors addObject:[NSNumber numberWithInt:quotient]];
-        }
+        divisor++;
 
-        
-        
-        
-        
-        
-        
     }
     
     return primeFactors;

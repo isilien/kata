@@ -71,7 +71,7 @@
     PrimeFactors *pf = [[PrimeFactors alloc] init];
     NSMutableArray *result = [pf generate:[NSNumber numberWithInt:9]];
     
-    XCTAssertEqual([result objectAtIndex:0], [NSNumber numberWithInt:2], @"First element should be 3");
+    XCTAssertEqual([result objectAtIndex:0], [NSNumber numberWithInt:3], @"First element should be 3");
     XCTAssertEqual([result objectAtIndex:1], [NSNumber numberWithInt:3], @"Second element should be 3");
     
 }
