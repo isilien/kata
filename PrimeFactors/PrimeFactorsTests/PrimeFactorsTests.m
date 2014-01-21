@@ -41,4 +41,17 @@
     
 }
 
+// PrimeFactors method generate should return an array of size 0 if given a number with no prime factors
+- (void)testGenerateShouldReturnEmptyArray {
+    
+    PrimeFactors *pf = [[PrimeFactors alloc] init];
+    
+    NSNumber *numberWithNoPrimeFactors = [NSNumber numberWithInt:1];
+    
+    NSMutableArray *result = [pf generate:numberWithNoPrimeFactors];
+    
+    XCTAssertTrue([result count] == 0, @"Generate should return an empty array if given a number with no prime factors");
+    
+}
+
 @end
