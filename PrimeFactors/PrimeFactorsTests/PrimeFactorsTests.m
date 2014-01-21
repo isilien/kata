@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "PrimeFactors.h"
+
 @interface PrimeFactorsTests : XCTestCase
 
 @end

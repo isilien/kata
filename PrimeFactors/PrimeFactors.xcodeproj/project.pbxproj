@@ -22,6 +22,7 @@
 		8536E874188E0C2A0065B072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536E853188E0C2A0065B072 /* UIKit.framework */; };
 		8536E87C188E0C2A0065B072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8536E87A188E0C2A0065B072 /* InfoPlist.strings */; };
 		8536E87E188E0C2A0065B072 /* PrimeFactorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536E87D188E0C2A0065B072 /* PrimeFactorsTests.m */; };
+		8536E889188E0E7E0065B072 /* PrimeFactors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536E888188E0E7E0065B072 /* PrimeFactors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		8536E879188E0C2A0065B072 /* PrimeFactorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrimeFactorsTests-Info.plist"; sourceTree = "<group>"; };
 		8536E87B188E0C2A0065B072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8536E87D188E0C2A0065B072 /* PrimeFactorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrimeFactorsTests.m; sourceTree = "<group>"; };
+		8536E887188E0E7E0065B072 /* PrimeFactors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeFactors.h; sourceTree = SOURCE_ROOT; };
+		8536E888188E0E7E0065B072 /* PrimeFactors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeFactors.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		8536E855188E0C2A0065B072 /* PrimeFactors */ = {
 			isa = PBXGroup;
 			children = (
+				8536E887188E0E7E0065B072 /* PrimeFactors.h */,
+				8536E888188E0E7E0065B072 /* PrimeFactors.m */,
 				8536E85E188E0C2A0065B072 /* AppDelegate.h */,
 				8536E85F188E0C2A0065B072 /* AppDelegate.m */,
 				8536E861188E0C2A0065B072 /* Main_iPhone.storyboard */,
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8536E889188E0E7E0065B072 /* PrimeFactors.m in Sources */,
 				8536E869188E0C2A0065B072 /* ViewController.m in Sources */,
 				8536E860188E0C2A0065B072 /* AppDelegate.m in Sources */,
 				8536E85C188E0C2A0065B072 /* main.m in Sources */,
