@@ -10,15 +10,18 @@
 
 @implementation PrimeFactors
 
+//
+// Given an integer "number", return a list of its prime factors in ascending order
+//
 - (NSMutableArray *)generate:(NSNumber *)number {
     
-    NSMutableArray *result = [NSMutableArray array];
+    NSMutableArray *primeFactors = [NSMutableArray array];
     
     if ([number integerValue] > 1) {
-        [result addObject:[NSNumber numberWithInt:2]];
+        [primeFactors addObject:[NSNumber numberWithInt:2]];
     }
     
-    return result;
+    return primeFactors;
 }
 
 @end
