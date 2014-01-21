@@ -26,9 +26,17 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+// PrimeFactors method generate should return a non-empty array
+- (void)testGenerateReturnsArray {
+    
+    PrimeFactors *pf = [[PrimeFactors alloc] init];
+    NSNumber *testNumber = [NSNumber numberWithInt:8];
+    
+    NSMutableArray *result = [pf generate:testNumber];
+    
+    XCTAssertTrue([result isKindOfClass:[NSMutableArray class]], @"PrimeFactors class method generate returns an array");
+    XCTAssertTrue([result count] > 0, @"Should return a non-empty array");
+    
 }
 
 @end
