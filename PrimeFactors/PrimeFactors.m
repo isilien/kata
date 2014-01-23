@@ -23,7 +23,7 @@
     
     while (quotient > 1) {
         
-        while (quotient%divisor == 0) {
+        while (quotient % divisor == 0) {
             [primeFactors addObject:[NSNumber numberWithInt:divisor]];
             quotient /= divisor;
         }
