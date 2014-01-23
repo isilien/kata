@@ -28,7 +28,7 @@
     [super tearDown];
 }
 
-// PrimeFactors method generate should return a non-empty array
+// Generate should return a non-empty array
 - (void)testGenerateReturnsArray {
     
     PrimeFactors *pf = [[PrimeFactors alloc] init];
@@ -36,12 +36,12 @@
     
     NSMutableArray *result = [pf generate:testNumber];
     
-    XCTAssertTrue([result isKindOfClass:[NSMutableArray class]], @"PrimeFactors class method generate returns an array");
-    XCTAssertTrue([result count] > 0, @"Should return a non-empty array");
+    XCTAssertTrue([result isKindOfClass:[NSMutableArray class]], @"Generate should return an array");
+    XCTAssertTrue([result count] > 0, @"Generate should return a non-empty array");
     
 }
 
-// PrimeFactors method generate should return an array of size 0 if given a number with no prime factors
+// Generate should return an array of size 0 if given a number with no prime factors
 - (void)testGenerateShouldReturnEmptyArray {
     
     PrimeFactors *pf = [[PrimeFactors alloc] init];
