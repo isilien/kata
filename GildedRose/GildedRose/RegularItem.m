@@ -17,6 +17,10 @@
     
     if (self) {
         
+        self.name = [item name];
+        self.sellIn = [item sellIn];
+        self.quality = [item quality];
+        
         self.qualityChangeRate = REGULAR_ITEM_QUALITY_CHANGE; // Decrease quality by 1 for Regular Items
         
         if (self.sellIn <= SELL_IN_MIN) {
@@ -41,7 +45,7 @@
     // Update sellIn
     self.sellIn--; // it's ok if sellIn is negative
     
-    return self;
+    return [Item itemWithName:self.name sellIn:self.sellIn andQuality:self.quality];
     
 }
 

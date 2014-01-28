@@ -140,6 +140,8 @@
 			children = (
 				854623381890DC2B002D769E /* Item.h */,
 				854623391890DC2B002D769E /* Item.m */,
+				85AC67A118976FCD00005E41 /* Constants.h */,
+				85AC67A218976FCD00005E41 /* Constants.m */,
 				8505796818934EE100C69518 /* RegularItem.h */,
 				8505796918934EE100C69518 /* RegularItem.m */,
 				85AC679E1897675E00005E41 /* AgedItem.h */,
@@ -152,8 +154,6 @@
 				8505796318934A9000C69518 /* ConjuredItem.m */,
 				854623351890DA1B002D769E /* GildedRose.h */,
 				854623361890DA1B002D769E /* GildedRose.m */,
-				85AC67A118976FCD00005E41 /* Constants.h */,
-				85AC67A218976FCD00005E41 /* Constants.m */,
 				8546230C1890D9B0002D769E /* AppDelegate.h */,
 				8546230D1890D9B0002D769E /* AppDelegate.m */,
 				8546230F1890D9B0002D769E /* Main_iPhone.storyboard */,

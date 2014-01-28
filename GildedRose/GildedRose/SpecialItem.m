@@ -17,6 +17,10 @@
     
     if (self) {
         
+        self.name = [item name];
+        self.sellIn = [item sellIn];
+        self.quality = [item quality];
+        
         // Quality increases by 2 if there are 10 days or less
         if (self.sellIn <= 10) {
             self.qualityChangeRate = 2;
@@ -27,9 +31,7 @@
         }
         else {
             self.qualityChangeRate = SPECIAL_ITEM_QUALITY_CHANGE; // Special Items increase in quality in time
-        }
-        
-        
+        }            
     }
     return self;
 }

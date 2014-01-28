@@ -18,7 +18,32 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    GildedRose *gr = [[GildedRose alloc] init];
+        
+    NSLog(@"Initial list of items");
+    
+    for (id obj in gr.items) {
+        
+        NSLog(@"Name: %@", [obj name]);
+        NSLog(@"Quality: %d", [obj quality]);
+        NSLog(@"Sell In: %d", [obj sellIn]);
+    }
+		
+    [gr updateQuality];
+
+    NSLog(@"\n\nUpdated list of items");
+    
+    for (id obj in gr.items) {
+        
+        NSLog(@"Name: %@", [obj name]);
+        NSLog(@"Quality: %d", [obj quality]);
+        NSLog(@"Sell In: %d", [obj sellIn]);
+    }
+    
+    
 }
+
 
 - (void)didReceiveMemoryWarning
 {

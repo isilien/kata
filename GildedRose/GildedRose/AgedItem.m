@@ -17,6 +17,10 @@
     
     if (self) {
         
+        self.name = [item name];
+        self.sellIn = [item sellIn];
+        self.quality = [item quality];
+        
         self.qualityChangeRate = AGED_ITEM_QUALITY_CHANGE; // AgedItems increase in quality as time goes by
     }
     return self;

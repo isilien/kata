@@ -17,6 +17,10 @@
     
     if (self) {
         
+        self.name = [item name];
+        self.sellIn = [item sellIn];
+        self.quality = [item quality];
+        
         self.qualityChangeRate = REGULAR_ITEM_QUALITY_CHANGE*2; // Conjured Items degrade in quality twice as fast as Regular Items
     }
     return self;

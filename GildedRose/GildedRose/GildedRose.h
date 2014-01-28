@@ -18,11 +18,11 @@
 
 @interface GildedRose : NSObject {
     
-    NSArray *items;
+    NSMutableArray *items;
     
 }
 
-@property (nonatomic, retain) NSArray *items;
+@property (nonatomic, retain) NSMutableArray *items;
 
 - (void) updateQuality_old;
 - (void) updateQuality;

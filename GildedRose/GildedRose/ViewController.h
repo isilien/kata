@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "GildedRose.h"
+
 @interface ViewController : UIViewController
 
 @end

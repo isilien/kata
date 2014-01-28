@@ -17,6 +17,10 @@
     
     if (self) {
         
+        self.name = [item name];
+        self.sellIn = [item sellIn];
+        self.quality = [item quality];
+        
         self.qualityChangeRate = LEGENDARY_ITEM_QUALITY_CHANGE; // If a Legendary Item is ever sold, their quality decreases        
     }
     return self;

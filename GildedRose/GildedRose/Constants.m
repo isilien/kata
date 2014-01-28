@@ -24,12 +24,12 @@
     self = [super init];
     
     self.itemCatalogue = [NSDictionary dictionaryWithObjectsAndKeys:
-                          @"+5 Dexterity Vest", @"REGULAR",
-                          @"Aged Brie", @"AGED",
-                          @"Elixir of the Mongoose", @"REGULAR",
-                          @"Sulfuras, Hand of Ragnaros", @"LEGENDARY",
-                          @"Backstage passes to a TAFKAL80ETC concert", @"SPECIAL",
-                          @"Conjured Mana Cake", @"CONJURED",
+                          @"REGULAR", @"+5 Dexterity Vest",
+                          @"AGED", @"Aged Brie",
+                          @"REGULAR", @"Elixir of the Mongoose",
+                          @"LEGENDARY", @"Sulfuras, Hand of Ragnaros",
+                          @"SPECIAL", @"Backstage passes to a TAFKAL80ETC concert",
+                          @"CONJURED", @"Conjured Mana Cake",
                           nil];
 
     return self;    
