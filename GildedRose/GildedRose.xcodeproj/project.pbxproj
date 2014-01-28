@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8505796418934A9000C69518 /* ConjuredItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8505796318934A9000C69518 /* ConjuredItem.m */; };
+		8505796718934CF400C69518 /* LegendaryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8505796618934CF400C69518 /* LegendaryItem.m */; };
+		8505796A18934EE100C69518 /* RegularItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8505796918934EE100C69518 /* RegularItem.m */; };
 		854622FE1890D9B0002D769E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854622FD1890D9B0002D769E /* Foundation.framework */; };
 		854623001890D9B0002D769E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854622FF1890D9B0002D769E /* CoreGraphics.framework */; };
 		854623021890D9B0002D769E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854623011890D9B0002D769E /* UIKit.framework */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8505796218934A9000C69518 /* ConjuredItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConjuredItem.h; sourceTree = "<group>"; };
+		8505796318934A9000C69518 /* ConjuredItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConjuredItem.m; sourceTree = "<group>"; };
+		8505796518934CF400C69518 /* LegendaryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegendaryItem.h; sourceTree = "<group>"; };
+		8505796618934CF400C69518 /* LegendaryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegendaryItem.m; sourceTree = "<group>"; };
+		8505796818934EE100C69518 /* RegularItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularItem.h; sourceTree = "<group>"; };
+		8505796918934EE100C69518 /* RegularItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularItem.m; sourceTree = "<group>"; };
 		854622FA1890D9B0002D769E /* GildedRose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GildedRose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		854622FD1890D9B0002D769E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		854622FF1890D9B0002D769E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +131,12 @@
 			children = (
 				854623381890DC2B002D769E /* Item.h */,
 				854623391890DC2B002D769E /* Item.m */,
+				8505796818934EE100C69518 /* RegularItem.h */,
+				8505796918934EE100C69518 /* RegularItem.m */,
+				8505796518934CF400C69518 /* LegendaryItem.h */,
+				8505796618934CF400C69518 /* LegendaryItem.m */,
+				8505796218934A9000C69518 /* ConjuredItem.h */,
+				8505796318934A9000C69518 /* ConjuredItem.m */,
 				854623351890DA1B002D769E /* GildedRose.h */,
 				854623361890DA1B002D769E /* GildedRose.m */,
 				8546230C1890D9B0002D769E /* AppDelegate.h */,
@@ -264,10 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8546233A1890DC2B002D769E /* Item.m in Sources */,
+				8505796A18934EE100C69518 /* RegularItem.m in Sources */,
 				854623171890D9B0002D769E /* ViewController.m in Sources */,
+				8505796418934A9000C69518 /* ConjuredItem.m in Sources */,
 				854623371890DA1B002D769E /* GildedRose.m in Sources */,
 				8546230E1890D9B0002D769E /* AppDelegate.m in Sources */,
 				8546230A1890D9B0002D769E /* main.m in Sources */,
+				8505796718934CF400C69518 /* LegendaryItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +504,7 @@
 				854623311890D9B1002D769E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		854623321890D9B1002D769E /* Build configuration list for PBXNativeTarget "GildedRoseTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +513,7 @@
 				854623341890D9B1002D769E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
