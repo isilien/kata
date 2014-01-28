@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#import "Item.h"
+#import "Constants.h"
+#import "RegularItem.h"
+#import "AgedItem.h"
+#import "LegendaryItem.h"
+#import "ConjuredItem.h"
+#import "SpecialItem.h"
+
 @interface GildedRose : NSObject {
     
     NSArray *items;
@@ -16,6 +24,7 @@
 
 @property (nonatomic, retain) NSArray *items;
 
+- (void) updateQuality_old;
 - (void) updateQuality;
 
 @end

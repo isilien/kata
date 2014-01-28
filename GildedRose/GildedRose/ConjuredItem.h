@@ -8,7 +8,17 @@
 
 #import "Item.h"
 
-@interface ConjuredItem : Item
+#import "Constants.h"
 
+@interface ConjuredItem : Item {
+    
+    int qualityChangeRate;
+    
+}
+
+@property (nonatomic) int qualityChangeRate;
+
+- (id) initWithItem:(Item *)item;
+- (Item *) updateStatus;
 
 @end

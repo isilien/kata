@@ -27,6 +27,9 @@
 		8546232C1890D9B0002D769E /* GildedRoseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8546232B1890D9B0002D769E /* GildedRoseTests.m */; };
 		854623371890DA1B002D769E /* GildedRose.m in Sources */ = {isa = PBXBuildFile; fileRef = 854623361890DA1B002D769E /* GildedRose.m */; };
 		8546233A1890DC2B002D769E /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 854623391890DC2B002D769E /* Item.m */; };
+		85AC67A01897675E00005E41 /* AgedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AC679F1897675E00005E41 /* AgedItem.m */; };
+		85AC67A318976FCD00005E41 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AC67A218976FCD00005E41 /* Constants.m */; };
+		85AC67A61897748900005E41 /* SpecialItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AC67A51897748900005E41 /* SpecialItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,12 @@
 		854623361890DA1B002D769E /* GildedRose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GildedRose.m; sourceTree = "<group>"; };
 		854623381890DC2B002D769E /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		854623391890DC2B002D769E /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		85AC679E1897675E00005E41 /* AgedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgedItem.h; sourceTree = "<group>"; };
+		85AC679F1897675E00005E41 /* AgedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgedItem.m; sourceTree = "<group>"; };
+		85AC67A118976FCD00005E41 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		85AC67A218976FCD00005E41 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		85AC67A41897748900005E41 /* SpecialItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialItem.h; sourceTree = "<group>"; };
+		85AC67A51897748900005E41 /* SpecialItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +142,18 @@
 				854623391890DC2B002D769E /* Item.m */,
 				8505796818934EE100C69518 /* RegularItem.h */,
 				8505796918934EE100C69518 /* RegularItem.m */,
+				85AC679E1897675E00005E41 /* AgedItem.h */,
+				85AC679F1897675E00005E41 /* AgedItem.m */,
 				8505796518934CF400C69518 /* LegendaryItem.h */,
 				8505796618934CF400C69518 /* LegendaryItem.m */,
+				85AC67A41897748900005E41 /* SpecialItem.h */,
+				85AC67A51897748900005E41 /* SpecialItem.m */,
 				8505796218934A9000C69518 /* ConjuredItem.h */,
 				8505796318934A9000C69518 /* ConjuredItem.m */,
 				854623351890DA1B002D769E /* GildedRose.h */,
 				854623361890DA1B002D769E /* GildedRose.m */,
+				85AC67A118976FCD00005E41 /* Constants.h */,
+				85AC67A218976FCD00005E41 /* Constants.m */,
 				8546230C1890D9B0002D769E /* AppDelegate.h */,
 				8546230D1890D9B0002D769E /* AppDelegate.m */,
 				8546230F1890D9B0002D769E /* Main_iPhone.storyboard */,
@@ -279,10 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8546233A1890DC2B002D769E /* Item.m in Sources */,
+				85AC67A01897675E00005E41 /* AgedItem.m in Sources */,
 				8505796A18934EE100C69518 /* RegularItem.m in Sources */,
 				854623171890D9B0002D769E /* ViewController.m in Sources */,
 				8505796418934A9000C69518 /* ConjuredItem.m in Sources */,
+				85AC67A318976FCD00005E41 /* Constants.m in Sources */,
 				854623371890DA1B002D769E /* GildedRose.m in Sources */,
+				85AC67A61897748900005E41 /* SpecialItem.m in Sources */,
 				8546230E1890D9B0002D769E /* AppDelegate.m in Sources */,
 				8546230A1890D9B0002D769E /* main.m in Sources */,
 				8505796718934CF400C69518 /* LegendaryItem.m in Sources */,

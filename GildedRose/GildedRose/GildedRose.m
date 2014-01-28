@@ -7,7 +7,6 @@
 //
 
 #import "GildedRose.h"
-#import "Item.h"
 
 @implementation GildedRose
 
@@ -25,12 +24,49 @@
                        [Item itemWithName:@"Backstage passes to a TAFKAL80ETC concert" sellIn:15 andQuality:20],
                        [Item itemWithName:@"Conjured Mana Cake" sellIn:3 andQuality:6]];
     }
-    
     return self;
+}
+
+
+- (void) updateQuality {
+    
+    NSDictionary *itemCatalogue = [[[Constants alloc] init] itemCatalogue];
+    
+    for (Item __strong *item in self.items) {
+        
+        NSString *itemType = [itemCatalogue objectForKey:[item name]];
+        
+        if ([itemType isEqualToString:@"REGULAR"]) {
+            
+            RegularItem *tmp = [[RegularItem alloc] initWithItem:item];
+            item = [tmp updateStatus];
+        }
+        else if ([itemType isEqualToString:@"AGED"]) {
+            
+            AgedItem *tmp = [[AgedItem alloc] initWithItem:item];
+            item = [tmp updateStatus];
+        }
+        else if ([itemType isEqualToString:@"LEGENDARY"]) {
+            
+            LegendaryItem *tmp = [[LegendaryItem alloc] initWithItem:item];
+            item = [tmp updateStatus];
+        }
+        else if ([itemType isEqualToString:@"SPECIAL"]) {
+            SpecialItem *tmp = [[SpecialItem alloc] initWithItem:item];
+            item = [tmp updateStatus];
+        }
+        else if ([itemType isEqualToString:@"CONJURED"]) {
+            ConjuredItem *tmp = [[ConjuredItem alloc] initWithItem:item];
+            item = [tmp updateStatus];
+        }
+        
+    }
     
 }
 
-- (void) updateQuality {
+
+
+- (void) updateQuality_old {
     
     for (int i=0; i < [self.items count]; i++) {
         if (![[self.items[i] name] isEqualToString:@"Aged Brie"] && ![[self.items[i] name] isEqualToString:@"Backstage passes to a TAFKAL80ETC concert"]) {

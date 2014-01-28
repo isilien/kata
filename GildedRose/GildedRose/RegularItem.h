@@ -8,6 +8,8 @@
 
 #import "Item.h"
 
+#import "Constants.h"
+
 @interface RegularItem : Item {
     
     int qualityChangeRate;
@@ -17,5 +19,6 @@
 @property (nonatomic) int qualityChangeRate;
 
 - (id) initWithItem:(Item *)item;
+- (Item *) updateStatus;
 
 @end

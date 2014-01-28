@@ -1,14 +1,14 @@
 //
-//  ConjuredItem.m
+//  AgedItem.m
 //  GildedRose
 //
-//  Created by Isil Demir on 1/24/14.
+//  Created by Isil Demir on 1/27/14.
 //  Copyright (c) 2014 Isil Demir. All rights reserved.
 //
 
-#import "ConjuredItem.h"
+#import "AgedItem.h"
 
-@implementation ConjuredItem
+@implementation AgedItem
 
 @synthesize qualityChangeRate;
 
@@ -17,7 +17,7 @@
     
     if (self) {
         
-        self.qualityChangeRate = REGULAR_ITEM_QUALITY_CHANGE*2; // Conjured Items degrade in quality twice as fast as Regular Items
+        self.qualityChangeRate = AGED_ITEM_QUALITY_CHANGE; // AgedItems increase in quality as time goes by
     }
     return self;
 }
@@ -29,7 +29,7 @@
 - (Item *) updateStatus {
     
     // Update quality
-    if (self.quality > QUALITY_MIN) {
+    if (self.quality < QUALITY_MAX) { 
         self.quality += self.qualityChangeRate;
     }
     

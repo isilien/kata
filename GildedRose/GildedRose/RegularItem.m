@@ -17,12 +17,12 @@
     
     if (self) {
         
-        self.qualityChangeRate = -1; // Decrease quality by 1 for Regular Items
+        self.qualityChangeRate = REGULAR_ITEM_QUALITY_CHANGE; // Decrease quality by 1 for Regular Items
         
-        if (self.sellIn <= 0) {
+        if (self.sellIn <= SELL_IN_MIN) {
             self.qualityChangeRate *= 2; // Quality of an item degrades twice as fast, if the sell by date (sellIn) has passed
         }
-
+        
     }
     return self;
 }
@@ -34,8 +34,8 @@
 - (Item *) updateStatus {
     
     // Update quality
-    if (self.quality > 0) { // Quality is never zero
-        self.quality -= self.qualityChangeRate;
+    if (self.quality > QUALITY_MIN) { // Quality is never zero
+        self.quality += self.qualityChangeRate;
     }
     
     // Update sellIn
