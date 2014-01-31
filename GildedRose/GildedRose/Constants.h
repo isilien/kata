@@ -12,7 +12,7 @@
 //
 // General constant values
 //
-#define QUALITY_MAX 50  // An iteam cannot have quality greater than 50
+#define QUALITY_MAX 50  // An item cannot have quality greater than 50
 #define QUALITY_MIN 0   // An item cannot have quality lesser than 0
 #define SELL_IN_MIN 0   // You could decrease this if you wanted to sell items past their sell by dates ;)
 

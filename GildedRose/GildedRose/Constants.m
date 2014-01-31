@@ -24,7 +24,7 @@
     self = [super init];
     
     self.itemCatalogue = [NSDictionary dictionaryWithObjectsAndKeys:
-                          @"REGULAR", @"+5 Dexterity Vest",
+                          @"REGULAR", @"+5 Dexterity Vest", 
                           @"AGED", @"Aged Brie",
                           @"REGULAR", @"Elixir of the Mongoose",
                           @"LEGENDARY", @"Sulfuras, Hand of Ragnaros",
