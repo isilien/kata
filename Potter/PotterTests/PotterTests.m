@@ -9,6 +9,8 @@
 #import <XCTest/XCTest.h>
 #import "Potter.h"
 
+#define ACCURACY 0.0001
+
 @interface PotterTests : XCTestCase
 
 @end
@@ -31,9 +33,12 @@
     
     Potter *harry = [[Potter alloc] init];
     
-    float books[] = {};
+    double books[] = {};
     
-    XCTAssertEqual(0, [harry calculatePrice:books]);
+    //XCTAssertEqual(0, [harry calculatePrice:books]); ///////////////////////////////// EPIC FAIL ///////////////////////////////////////
+    XCTAssertEqualWithAccuracy(0, [harry calculatePrice:books], ACCURACY);
+    
+    
     
     
 }

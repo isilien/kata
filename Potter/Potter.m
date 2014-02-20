@@ -10,7 +10,7 @@
 
 @implementation Potter
 
--(float) calculatePrice:(float[]) books {
+-(double) calculatePrice:(double[]) books {
     
     return 0.0;
     

@@ -10,6 +10,6 @@
 
 @interface Potter : NSObject
 
--(float) calculatePrice:(float[]) books;
+-(double) calculatePrice:(double[]) books;
 
 @end
