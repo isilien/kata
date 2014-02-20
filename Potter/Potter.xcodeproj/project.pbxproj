@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXGroup section */
-		856EAF2218B5BDEA00DAC887 = {
+		8536ACEE18B5C01E00AD2353 = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -16,19 +16,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		856EAF2318B5BDEA00DAC887 /* Project object */ = {
+		8536ACEF18B5C01E00AD2353 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 			};
-			buildConfigurationList = 856EAF2618B5BDEA00DAC887 /* Build configuration list for PBXProject "Potter" */;
+			buildConfigurationList = 8536ACF218B5C01E00AD2353 /* Build configuration list for PBXProject "Potter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 856EAF2218B5BDEA00DAC887;
+			mainGroup = 8536ACEE18B5C01E00AD2353;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -37,13 +37,13 @@
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		856EAF2718B5BDEA00DAC887 /* Debug */ = {
+		8536ACF318B5C01E00AD2353 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		856EAF2818B5BDEA00DAC887 /* Release */ = {
+		8536ACF418B5C01E00AD2353 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
@@ -52,16 +52,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		856EAF2618B5BDEA00DAC887 /* Build configuration list for PBXProject "Potter" */ = {
+		8536ACF218B5C01E00AD2353 /* Build configuration list for PBXProject "Potter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				856EAF2718B5BDEA00DAC887 /* Debug */,
-				856EAF2818B5BDEA00DAC887 /* Release */,
+				8536ACF318B5C01E00AD2353 /* Debug */,
+				8536ACF418B5C01E00AD2353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 856EAF2318B5BDEA00DAC887 /* Project object */;
+	rootObject = 8536ACEF18B5C01E00AD2353 /* Project object */;
 }
