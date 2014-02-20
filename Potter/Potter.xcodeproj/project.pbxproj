@@ -7,80 +7,155 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8536AD3F18B5C48F00AD2353 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536AD3E18B5C48F00AD2353 /* XCTest.framework */; };
-		8536AD4118B5C48F00AD2353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536AD4018B5C48F00AD2353 /* Foundation.framework */; };
-		8536AD4318B5C48F00AD2353 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536AD4218B5C48F00AD2353 /* UIKit.framework */; };
-		8536AD4918B5C48F00AD2353 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8536AD4718B5C48F00AD2353 /* InfoPlist.strings */; };
-		8536AD4B18B5C48F00AD2353 /* PotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536AD4A18B5C48F00AD2353 /* PotterTests.m */; };
+		8536ADDF18B5CC5B00AD2353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536ADDE18B5CC5B00AD2353 /* Foundation.framework */; };
+		8536ADE118B5CC5B00AD2353 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536ADE018B5CC5B00AD2353 /* CoreGraphics.framework */; };
+		8536ADE318B5CC5B00AD2353 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536ADE218B5CC5B00AD2353 /* UIKit.framework */; };
+		8536ADE918B5CC5B00AD2353 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8536ADE718B5CC5B00AD2353 /* InfoPlist.strings */; };
+		8536ADEB18B5CC5B00AD2353 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536ADEA18B5CC5B00AD2353 /* main.m */; };
+		8536ADEF18B5CC5B00AD2353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536ADEE18B5CC5B00AD2353 /* AppDelegate.m */; };
+		8536ADF218B5CC5B00AD2353 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8536ADF018B5CC5B00AD2353 /* Main_iPhone.storyboard */; };
+		8536ADF518B5CC5B00AD2353 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8536ADF318B5CC5B00AD2353 /* Main_iPad.storyboard */; };
+		8536ADF818B5CC5B00AD2353 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536ADF718B5CC5B00AD2353 /* ViewController.m */; };
+		8536ADFA18B5CC5B00AD2353 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8536ADF918B5CC5B00AD2353 /* Images.xcassets */; };
+		8536AE0118B5CC5B00AD2353 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536AE0018B5CC5B00AD2353 /* XCTest.framework */; };
+		8536AE0218B5CC5B00AD2353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536ADDE18B5CC5B00AD2353 /* Foundation.framework */; };
+		8536AE0318B5CC5B00AD2353 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536ADE218B5CC5B00AD2353 /* UIKit.framework */; };
+		8536AE0B18B5CC5B00AD2353 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8536AE0918B5CC5B00AD2353 /* InfoPlist.strings */; };
+		8536AE0D18B5CC5B00AD2353 /* PotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536AE0C18B5CC5B00AD2353 /* PotterTests.m */; };
+		8536AE1818B5CC7300AD2353 /* Potter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536AE1718B5CC7300AD2353 /* Potter.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8536AE0418B5CC5B00AD2353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8536ADD318B5CC5B00AD2353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8536ADDA18B5CC5B00AD2353;
+			remoteInfo = Potter;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		8536AD3B18B5C48F00AD2353 /* PotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8536AD3E18B5C48F00AD2353 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8536AD4018B5C48F00AD2353 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8536AD4218B5C48F00AD2353 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8536AD4618B5C48F00AD2353 /* PotterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PotterTests-Info.plist"; sourceTree = "<group>"; };
-		8536AD4818B5C48F00AD2353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8536AD4A18B5C48F00AD2353 /* PotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PotterTests.m; sourceTree = "<group>"; };
-		8536AD4C18B5C48F00AD2353 /* PotterTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PotterTests-Prefix.pch"; sourceTree = "<group>"; };
+		8536ADDB18B5CC5B00AD2353 /* Potter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8536ADDE18B5CC5B00AD2353 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8536ADE018B5CC5B00AD2353 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8536ADE218B5CC5B00AD2353 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8536ADE618B5CC5B00AD2353 /* Potter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Potter-Info.plist"; sourceTree = "<group>"; };
+		8536ADE818B5CC5B00AD2353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8536ADEA18B5CC5B00AD2353 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8536ADEC18B5CC5B00AD2353 /* Potter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Potter-Prefix.pch"; sourceTree = "<group>"; };
+		8536ADED18B5CC5B00AD2353 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8536ADEE18B5CC5B00AD2353 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8536ADF118B5CC5B00AD2353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		8536ADF418B5CC5B00AD2353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		8536ADF618B5CC5B00AD2353 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8536ADF718B5CC5B00AD2353 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8536ADF918B5CC5B00AD2353 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8536ADFF18B5CC5B00AD2353 /* PotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8536AE0018B5CC5B00AD2353 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8536AE0818B5CC5B00AD2353 /* PotterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PotterTests-Info.plist"; sourceTree = "<group>"; };
+		8536AE0A18B5CC5B00AD2353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8536AE0C18B5CC5B00AD2353 /* PotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PotterTests.m; sourceTree = "<group>"; };
+		8536AE1618B5CC7300AD2353 /* Potter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Potter.h; sourceTree = "<group>"; };
+		8536AE1718B5CC7300AD2353 /* Potter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Potter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8536AD3818B5C48F00AD2353 /* Frameworks */ = {
+		8536ADD818B5CC5B00AD2353 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8536AD3F18B5C48F00AD2353 /* XCTest.framework in Frameworks */,
-				8536AD4318B5C48F00AD2353 /* UIKit.framework in Frameworks */,
-				8536AD4118B5C48F00AD2353 /* Foundation.framework in Frameworks */,
+				8536ADE118B5CC5B00AD2353 /* CoreGraphics.framework in Frameworks */,
+				8536ADE318B5CC5B00AD2353 /* UIKit.framework in Frameworks */,
+				8536ADDF18B5CC5B00AD2353 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8536ADFC18B5CC5B00AD2353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8536AE0118B5CC5B00AD2353 /* XCTest.framework in Frameworks */,
+				8536AE0318B5CC5B00AD2353 /* UIKit.framework in Frameworks */,
+				8536AE0218B5CC5B00AD2353 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8536AD3018B5C47A00AD2353 = {
+		8536ADD218B5CC5B00AD2353 = {
 			isa = PBXGroup;
 			children = (
-				8536AD4418B5C48F00AD2353 /* PotterTests */,
-				8536AD3D18B5C48F00AD2353 /* Frameworks */,
-				8536AD3C18B5C48F00AD2353 /* Products */,
+				8536ADE418B5CC5B00AD2353 /* Potter */,
+				8536AE0618B5CC5B00AD2353 /* PotterTests */,
+				8536ADDD18B5CC5B00AD2353 /* Frameworks */,
+				8536ADDC18B5CC5B00AD2353 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8536AD3C18B5C48F00AD2353 /* Products */ = {
+		8536ADDC18B5CC5B00AD2353 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8536AD3B18B5C48F00AD2353 /* PotterTests.xctest */,
+				8536ADDB18B5CC5B00AD2353 /* Potter.app */,
+				8536ADFF18B5CC5B00AD2353 /* PotterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8536AD3D18B5C48F00AD2353 /* Frameworks */ = {
+		8536ADDD18B5CC5B00AD2353 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8536AD3E18B5C48F00AD2353 /* XCTest.framework */,
-				8536AD4018B5C48F00AD2353 /* Foundation.framework */,
-				8536AD4218B5C48F00AD2353 /* UIKit.framework */,
+				8536ADDE18B5CC5B00AD2353 /* Foundation.framework */,
+				8536ADE018B5CC5B00AD2353 /* CoreGraphics.framework */,
+				8536ADE218B5CC5B00AD2353 /* UIKit.framework */,
+				8536AE0018B5CC5B00AD2353 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8536AD4418B5C48F00AD2353 /* PotterTests */ = {
+		8536ADE418B5CC5B00AD2353 /* Potter */ = {
 			isa = PBXGroup;
 			children = (
-				8536AD4A18B5C48F00AD2353 /* PotterTests.m */,
-				8536AD4518B5C48F00AD2353 /* Supporting Files */,
+				8536AE1618B5CC7300AD2353 /* Potter.h */,
+				8536AE1718B5CC7300AD2353 /* Potter.m */,
+				8536ADED18B5CC5B00AD2353 /* AppDelegate.h */,
+				8536ADEE18B5CC5B00AD2353 /* AppDelegate.m */,
+				8536ADF018B5CC5B00AD2353 /* Main_iPhone.storyboard */,
+				8536ADF318B5CC5B00AD2353 /* Main_iPad.storyboard */,
+				8536ADF618B5CC5B00AD2353 /* ViewController.h */,
+				8536ADF718B5CC5B00AD2353 /* ViewController.m */,
+				8536ADF918B5CC5B00AD2353 /* Images.xcassets */,
+				8536ADE518B5CC5B00AD2353 /* Supporting Files */,
+			);
+			path = Potter;
+			sourceTree = "<group>";
+		};
+		8536ADE518B5CC5B00AD2353 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8536ADE618B5CC5B00AD2353 /* Potter-Info.plist */,
+				8536ADE718B5CC5B00AD2353 /* InfoPlist.strings */,
+				8536ADEA18B5CC5B00AD2353 /* main.m */,
+				8536ADEC18B5CC5B00AD2353 /* Potter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8536AE0618B5CC5B00AD2353 /* PotterTests */ = {
+			isa = PBXGroup;
+			children = (
+				8536AE0C18B5CC5B00AD2353 /* PotterTests.m */,
+				8536AE0718B5CC5B00AD2353 /* Supporting Files */,
 			);
 			path = PotterTests;
 			sourceTree = "<group>";
 		};
-		8536AD4518B5C48F00AD2353 /* Supporting Files */ = {
+		8536AE0718B5CC5B00AD2353 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8536AD4618B5C48F00AD2353 /* PotterTests-Info.plist */,
-				8536AD4718B5C48F00AD2353 /* InfoPlist.strings */,
-				8536AD4C18B5C48F00AD2353 /* PotterTests-Prefix.pch */,
+				8536AE0818B5CC5B00AD2353 /* PotterTests-Info.plist */,
+				8536AE0918B5CC5B00AD2353 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -88,75 +163,155 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8536AD3A18B5C48F00AD2353 /* PotterTests */ = {
+		8536ADDA18B5CC5B00AD2353 /* Potter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8536AD4D18B5C48F00AD2353 /* Build configuration list for PBXNativeTarget "PotterTests" */;
+			buildConfigurationList = 8536AE1018B5CC5B00AD2353 /* Build configuration list for PBXNativeTarget "Potter" */;
 			buildPhases = (
-				8536AD3718B5C48F00AD2353 /* Sources */,
-				8536AD3818B5C48F00AD2353 /* Frameworks */,
-				8536AD3918B5C48F00AD2353 /* Resources */,
+				8536ADD718B5CC5B00AD2353 /* Sources */,
+				8536ADD818B5CC5B00AD2353 /* Frameworks */,
+				8536ADD918B5CC5B00AD2353 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = Potter;
+			productName = Potter;
+			productReference = 8536ADDB18B5CC5B00AD2353 /* Potter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8536ADFE18B5CC5B00AD2353 /* PotterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8536AE1318B5CC5B00AD2353 /* Build configuration list for PBXNativeTarget "PotterTests" */;
+			buildPhases = (
+				8536ADFB18B5CC5B00AD2353 /* Sources */,
+				8536ADFC18B5CC5B00AD2353 /* Frameworks */,
+				8536ADFD18B5CC5B00AD2353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8536AE0518B5CC5B00AD2353 /* PBXTargetDependency */,
+			);
 			name = PotterTests;
 			productName = PotterTests;
-			productReference = 8536AD3B18B5C48F00AD2353 /* PotterTests.xctest */;
+			productReference = 8536ADFF18B5CC5B00AD2353 /* PotterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8536AD3118B5C47A00AD2353 /* Project object */ = {
+		8536ADD318B5CC5B00AD2353 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Isil Demir";
+				TargetAttributes = {
+					8536ADFE18B5CC5B00AD2353 = {
+						TestTargetID = 8536ADDA18B5CC5B00AD2353;
+					};
+				};
 			};
-			buildConfigurationList = 8536AD3418B5C47A00AD2353 /* Build configuration list for PBXProject "Potter" */;
+			buildConfigurationList = 8536ADD618B5CC5B00AD2353 /* Build configuration list for PBXProject "Potter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 8536AD3018B5C47A00AD2353;
-			productRefGroup = 8536AD3C18B5C48F00AD2353 /* Products */;
+			mainGroup = 8536ADD218B5CC5B00AD2353;
+			productRefGroup = 8536ADDC18B5CC5B00AD2353 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8536AD3A18B5C48F00AD2353 /* PotterTests */,
+				8536ADDA18B5CC5B00AD2353 /* Potter */,
+				8536ADFE18B5CC5B00AD2353 /* PotterTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8536AD3918B5C48F00AD2353 /* Resources */ = {
+		8536ADD918B5CC5B00AD2353 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8536AD4918B5C48F00AD2353 /* InfoPlist.strings in Resources */,
+				8536ADF518B5CC5B00AD2353 /* Main_iPad.storyboard in Resources */,
+				8536ADFA18B5CC5B00AD2353 /* Images.xcassets in Resources */,
+				8536ADF218B5CC5B00AD2353 /* Main_iPhone.storyboard in Resources */,
+				8536ADE918B5CC5B00AD2353 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8536ADFD18B5CC5B00AD2353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8536AE0B18B5CC5B00AD2353 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8536AD3718B5C48F00AD2353 /* Sources */ = {
+		8536ADD718B5CC5B00AD2353 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8536AD4B18B5C48F00AD2353 /* PotterTests.m in Sources */,
+				8536ADF818B5CC5B00AD2353 /* ViewController.m in Sources */,
+				8536AE1818B5CC7300AD2353 /* Potter.m in Sources */,
+				8536ADEF18B5CC5B00AD2353 /* AppDelegate.m in Sources */,
+				8536ADEB18B5CC5B00AD2353 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8536ADFB18B5CC5B00AD2353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8536AE0D18B5CC5B00AD2353 /* PotterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8536AE0518B5CC5B00AD2353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8536ADDA18B5CC5B00AD2353 /* Potter */;
+			targetProxy = 8536AE0418B5CC5B00AD2353 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		8536AD4718B5C48F00AD2353 /* InfoPlist.strings */ = {
+		8536ADE718B5CC5B00AD2353 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8536AD4818B5C48F00AD2353 /* en */,
+				8536ADE818B5CC5B00AD2353 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8536ADF018B5CC5B00AD2353 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8536ADF118B5CC5B00AD2353 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		8536ADF318B5CC5B00AD2353 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8536ADF418B5CC5B00AD2353 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		8536AE0918B5CC5B00AD2353 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8536AE0A18B5CC5B00AD2353 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -164,19 +319,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8536AD3518B5C47A00AD2353 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		8536AD3618B5C47A00AD2353 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		8536AD4E18B5C48F00AD2353 /* Debug */ = {
+		8536AE0E18B5CC5B00AD2353 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -193,17 +336,11 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PotterTests/PotterTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -215,16 +352,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PotterTests/PotterTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = xctest;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8536AD4F18B5C48F00AD2353 /* Release */ = {
+		8536AE0F18B5CC5B00AD2353 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,27 +376,87 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PotterTests/PotterTests-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PotterTests/PotterTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8536AE1118B5CC5B00AD2353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Potter/Potter-Prefix.pch";
+				INFOPLIST_FILE = "Potter/Potter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8536AE1218B5CC5B00AD2353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Potter/Potter-Prefix.pch";
+				INFOPLIST_FILE = "Potter/Potter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8536AE1418B5CC5B00AD2353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Potter.app/Potter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Potter/Potter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PotterTests/PotterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8536AE1518B5CC5B00AD2353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Potter.app/Potter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Potter/Potter-Prefix.pch";
+				INFOPLIST_FILE = "PotterTests/PotterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -269,24 +464,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8536AD3418B5C47A00AD2353 /* Build configuration list for PBXProject "Potter" */ = {
+		8536ADD618B5CC5B00AD2353 /* Build configuration list for PBXProject "Potter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8536AD3518B5C47A00AD2353 /* Debug */,
-				8536AD3618B5C47A00AD2353 /* Release */,
+				8536AE0E18B5CC5B00AD2353 /* Debug */,
+				8536AE0F18B5CC5B00AD2353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8536AD4D18B5C48F00AD2353 /* Build configuration list for PBXNativeTarget "PotterTests" */ = {
+		8536AE1018B5CC5B00AD2353 /* Build configuration list for PBXNativeTarget "Potter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8536AD4E18B5C48F00AD2353 /* Debug */,
-				8536AD4F18B5C48F00AD2353 /* Release */,
+				8536AE1118B5CC5B00AD2353 /* Debug */,
+				8536AE1218B5CC5B00AD2353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8536AE1318B5CC5B00AD2353 /* Build configuration list for PBXNativeTarget "PotterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8536AE1418B5CC5B00AD2353 /* Debug */,
+				8536AE1518B5CC5B00AD2353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8536AD3118B5C47A00AD2353 /* Project object */;
+	rootObject = 8536ADD318B5CC5B00AD2353 /* Project object */;
 }

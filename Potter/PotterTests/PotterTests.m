@@ -3,7 +3,7 @@
 //  PotterTests
 //
 //  Created by Isil Demir on 2/19/14.
-//
+//  Copyright (c) 2014 Isil Demir. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
@@ -35,11 +35,7 @@
     
     double books[] = {};
     
-    //XCTAssertEqual(0, [harry calculatePrice:books]); ///////////////////////////////// EPIC FAIL ///////////////////////////////////////
     XCTAssertEqualWithAccuracy(0, [harry calculatePrice:books], ACCURACY);
-    
-    
-    
     
 }
 
