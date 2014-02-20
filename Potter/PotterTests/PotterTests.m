@@ -62,7 +62,7 @@
     
 }
 
--(void)testSimpleDiscounts {
+- (void)testSimpleDiscounts {
     
     Potter *harry = [[Potter alloc] init];
     
@@ -79,5 +79,37 @@
     XCTAssertEqualWithAccuracy(8 * 5 * 0.75, [harry calculatePrice:books], ACCURACY);
     
 }
+
+- (void)testSeveralDiscounts {
+    
+    Potter *harry = [[Potter alloc] init];
+    
+    NSArray *books = @[ @0, @0, @1 ];
+    XCTAssertEqualWithAccuracy(8 + (8 * 2 * 0.95), [harry calculatePrice:books], ACCURACY);
+    
+    books = @[ @0, @0, @1, @1 ];
+    XCTAssertEqualWithAccuracy(2 * (8 * 2 * 0.95), [harry calculatePrice:books], ACCURACY);
+    
+    books = @[ @0, @0, @1, @2, @2, @3 ];
+    XCTAssertEqualWithAccuracy((8 * 4 * 0.8) + (8 * 2 * 0.95), [harry calculatePrice:books], ACCURACY);
+    
+    books = @[ @0, @1, @1, @2, @3, @4 ];
+    XCTAssertEqualWithAccuracy(8 + (8 * 5 * 0.75), [harry calculatePrice:books], ACCURACY);
+    
+}
+
+- (void)testEdgeCases {
+    
+    Potter *harry = [[Potter alloc] init];
+    
+    NSArray *books = @[ @0, @0, @1, @1, @2, @2, @3, @4 ];
+    XCTAssertEqualWithAccuracy(2 * (8 * 4 * 0.8), [harry calculatePrice:books], ACCURACY);
+    
+    books = @[ @0, @0, @0, @0, @0, @1, @1, @1, @1, @1, @2, @2, @2, @2, @3, @3, @3, @3, @3, @4, @4, @4, @4 ];
+    XCTAssertEqualWithAccuracy(3 * (8 * 5 * 0.75) + 2 * (8 * 4 * 0.8), [harry calculatePrice:books], ACCURACY);
+    
+}
+
+
 
 @end
