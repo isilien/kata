@@ -10,4 +10,10 @@
 
 @implementation Potter
 
+-(float) calculatePrice:(float[]) books {
+    
+    return 0.0;
+    
+}
+
 @end

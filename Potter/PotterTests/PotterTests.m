@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Potter.h"
 
 @interface PotterTests : XCTestCase
 
@@ -26,9 +27,15 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testBasics {
+    
+    Potter *harry = [[Potter alloc] init];
+    
+    float books[] = {};
+    
+    XCTAssertEqual(0, [harry calculatePrice:books]);
+    
+    
 }
 
 @end
