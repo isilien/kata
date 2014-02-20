@@ -10,10 +10,27 @@
 
 @implementation Potter
 
--(double) calculatePrice:(double[]) books {
+@synthesize price;
+
+-(double) calculatePrice:(NSMutableArray *) books {
     
-    return 0.0;
+    if ([books count] == 0) {
+        return self.price;
+    }
+    else {
+        self.price = [self calculatePrice:books];
+    }
+    
+    return -1;
     
 }
+
+
+// Return the number of books with a given index
+-(int) countBookCount:(NSMutableArray *) books withTitle:(NSString *) title {
+    
+    return 0;
+}
+
 
 @end

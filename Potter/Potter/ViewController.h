@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Potter.h"
 
 @interface ViewController : UIViewController
 

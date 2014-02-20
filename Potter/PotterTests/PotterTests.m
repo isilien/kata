@@ -33,9 +33,15 @@
     
     Potter *harry = [[Potter alloc] init];
     
-    double books[] = {};
-    
+    // Test 1
+    NSMutableArray *books = [NSMutableArray array];
     XCTAssertEqualWithAccuracy(0, [harry calculatePrice:books], ACCURACY);
+    
+    // Test 2
+    //books = [NSMutableArray arrayWithObjects:@"Stone", nil];
+    //XCTAssertEqualWithAccuracy(8, [harry calculatePrice:books], ACCURACY);
+    
+    
     
 }
 

@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Potter : NSObject
+@interface Potter : NSObject {
+    
+    double price;
+    
+}
 
--(double) calculatePrice:(double[]) books;
+@property (nonatomic) double price;
+
+-(double) calculatePrice:(NSMutableArray *) books;
+
+-(int) countBookCount:(NSMutableArray *) books withTitle:(NSString *) title;
 
 @end
