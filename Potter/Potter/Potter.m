@@ -12,25 +12,43 @@
 
 @synthesize price;
 
--(double) calculatePrice:(NSMutableArray *) books {
+-(double) calculatePrice:(NSArray *) books {
     
+    // Empty basket
     if ([books count] == 0) {
-        return self.price;
-    }
-    else {
-        self.price = [self calculatePrice:books];
+        return 0.0;
     }
     
-    return -1;
+    // One book in the basket
+    if ([books count] == 1) {
+        return 8.0;
+    }
+    
+    // One type of book in the basket, many books
+    int max = [[books valueForKeyPath:@"@max.intValue"] intValue];
+    int min = [[books valueForKeyPath:@"@min.intValue"] intValue];
+    if (max == min) {
+        return 8.0 * [books count];
+    }
+    
+    return 0.0;
     
 }
 
 
-// Return the number of books with a given index
--(int) countBookCount:(NSMutableArray *) books withTitle:(NSString *) title {
+-(int) countBook:(NSMutableArray *) books withTitle:(NSString *) title {
     
-    return 0;
+    int count = 0;
+    
+    for (int i=0; i < [books count]; i++) {
+        
+        if ([books[i] isEqualToString:title]) {
+            count++;
+        }
+    }
+    
+    return count;
 }
-
+    
 
 @end

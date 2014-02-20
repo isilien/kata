@@ -19,8 +19,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    Potter *harry = [[Potter alloc] init];
-
+    //NSArray *books = @[ @2, @1, @8 ];
+    
+    //int max = [[books valueForKeyPath:@"@max.intValue"] intValue];
+    
+    //NSLog(@"Max val: %i", max);
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -16,8 +16,8 @@
 
 @property (nonatomic) double price;
 
--(double) calculatePrice:(NSMutableArray *) books;
+-(double) calculatePrice:(NSArray *) books;
 
--(int) countBookCount:(NSMutableArray *) books withTitle:(NSString *) title;
+-(int) countBook:(NSMutableArray *) books withTitle:(NSString *) title;
 
 @end
