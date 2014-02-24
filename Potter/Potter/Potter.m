@@ -33,37 +33,28 @@
 - (double)calculatePrice:(NSArray *) books {
     
     // Empty basket
-    if ([books count] == 0) {
-        return 0.0;
-    }
+    if ([books count] == 0) return 0.0;
     
     // One book in the basket
-    if ([books count] == 1) {
-        return 8.0;
-    }
+    if ([books count] == 1) return 8.0;
     
     // One type of book in the basket, many books
-    int max = [[books valueForKeyPath:@"@max.intValue"] intValue];
-    int min = [[books valueForKeyPath:@"@min.intValue"] intValue];
-    if (max == min) {
-        return 8.0 * [books count];
-    }
+    if ([[books valueForKeyPath:@"@max.intValue"] intValue] == [[books valueForKeyPath:@"@min.intValue"] intValue]) return 8.0 * [books count];
     
     // Assorted books in basket
     //
+    double price = 0.0;
+    
     NSMutableArray *sortedBooks = [NSMutableArray arrayWithArray:[self sortArrayOfNumbers:books]];
     
     NSMutableArray *subsets = [self findSubsetsWithCardinality:sortedBooks];
-    
     subsets = [self replacements:subsets];
-    
-    double price = 0.0;
     
     for (int i = 0; i < [subsets count]; i++) {
         
         price += [[prices valueForKey:[subsets[i] stringValue]] doubleValue];
     }
-
+    
     return price;    
 }
 
@@ -113,6 +104,7 @@
         replaced[indexOfThree] = [NSNumber numberWithInt:4];
         replaced[indexOfFive] = [NSNumber numberWithInt:4];
     }
+    
     return replaced;
 }
 
@@ -130,6 +122,7 @@
             [reduced addObject:(NSNumber *)counts[i]];
         }
     }
+    
     return reduced;
 }
 
