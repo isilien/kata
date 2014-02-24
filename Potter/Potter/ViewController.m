@@ -19,11 +19,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    //NSArray *books = @[ @2, @1, @8 ];
+
+    int zeroCount = 0;
+    int oneCount = 1;
+    int twoCount = 2;
+    int threeCount = 3;
+    int fourCount = 4;
     
-    //int max = [[books valueForKeyPath:@"@max.intValue"] intValue];
+    NSArray *map = @[ @(zeroCount), @(oneCount), @(twoCount), @(threeCount), @(fourCount) ];
     
-    //NSLog(@"Max val: %i", max);
+    NSLog(@"map: %@", [map description]);
+
     
 }
 

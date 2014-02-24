@@ -105,7 +105,11 @@
     NSArray *books = @[ @0, @0, @1, @1, @2, @2, @3, @4 ];
     XCTAssertEqualWithAccuracy(2 * (8 * 4 * 0.8), [harry calculatePrice:books], ACCURACY);
     
-    books = @[ @0, @0, @0, @0, @0, @1, @1, @1, @1, @1, @2, @2, @2, @2, @3, @3, @3, @3, @3, @4, @4, @4, @4 ];
+    books = @[ @0, @0, @0, @0, @0,
+               @1, @1, @1, @1, @1,
+               @2, @2, @2, @2,
+               @3, @3, @3, @3, @3,
+               @4, @4, @4, @4 ];
     XCTAssertEqualWithAccuracy(3 * (8 * 5 * 0.75) + 2 * (8 * 4 * 0.8), [harry calculatePrice:books], ACCURACY);
     
 }

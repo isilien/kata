@@ -18,6 +18,4 @@
 
 -(double) calculatePrice:(NSArray *) books;
 
--(int) countBook:(NSMutableArray *) books withTitle:(NSString *) title;
-
 @end
