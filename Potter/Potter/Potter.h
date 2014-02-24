@@ -10,12 +10,12 @@
 
 @interface Potter : NSObject {
     
-    double price;
+    NSDictionary *prices;
     
 }
 
-@property (nonatomic) double price;
+@property (nonatomic, retain) NSDictionary *prices;
 
--(double) calculatePrice:(NSArray *) books;
+- (double)calculatePrice:(NSArray *) books;
 
 @end

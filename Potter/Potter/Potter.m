@@ -10,7 +10,25 @@
 
 @implementation Potter
 
-@synthesize price;
+@synthesize prices;
+
+- (id)init {
+    
+    self = [super init];
+    
+    if (self) {
+        // Price values for each subset of books with x cardinality
+        self.prices = [NSDictionary dictionaryWithObjectsAndKeys:
+                       @(8.0), @"1",
+                       @(15.2), @"2",
+                       @(21.6), @"3",
+                       @(25.6), @"4",
+                       @(30.0), @"5",
+                       nil];
+    }
+    
+    return self;
+}
 
 - (double)calculatePrice:(NSArray *) books {
     
@@ -35,14 +53,18 @@
     //
     NSMutableArray *sortedBooks = [NSMutableArray arrayWithArray:[self sortArrayOfNumbers:books]];
     
-    NSMutableArray *sets = [self findSubsetsWithCardinality:sortedBooks];
+    NSMutableArray *subsets = [self findSubsetsWithCardinality:sortedBooks];
     
+    subsets = [self replacements:subsets];
     
+    double price = 0.0;
     
-    
-    
-    return 0.0;
-    
+    for (int i = 0; i < [subsets count]; i++) {
+        
+        price += [[prices valueForKey:[subsets[i] stringValue]] doubleValue];
+    }
+
+    return price;    
 }
 
 
@@ -51,7 +73,6 @@
     NSMutableArray *sets = [NSMutableArray array];
     NSMutableArray *counts = [self countMap:sortedBooks];
     
-    // If there are zeros in counts, reduce them
     counts = [self reduce:counts];
     
     while ([counts count] != 0) {
@@ -62,22 +83,37 @@
         for (int i = 0; i < [counts count]; i++) {
             
             [current_set addObject:[NSNumber numberWithInt:1]]; // Add any object to current set
-            counts[index] = [NSNumber numberWithInt:(int)counts[i]-1]; // Decrement counts[i] object
+            counts[index] = [NSNumber numberWithInt:([counts[i] integerValue]-1)]; // Book placed in a subset, decrement count
             
             index++;
-            
-        } // end for
-        
+        }
+
         // Add this subset's cardinality to sets
         [sets addObject:[NSNumber numberWithInt:[current_set count]]];
         
-        // Reduce the new counts array
         counts = [self reduce:counts];
-                
-    } // end while
+    }
     
     return sets;
+}
+
+/**
+ * Replace all (5+3) subsets with (4+4) subsets
+ */
+- (NSMutableArray *) replacements:(NSMutableArray *)cardinalities {
     
+    NSMutableArray *replaced = cardinalities;
+    
+    while ([cardinalities containsObject:[NSNumber numberWithInt:3]] && [cardinalities containsObject:[NSNumber numberWithInt:5]]) {
+        
+        // Find indices for 3 and 5
+        int indexOfThree = [cardinalities indexOfObject:[NSNumber numberWithInt:3]];
+        int indexOfFive = [cardinalities indexOfObject:[NSNumber numberWithInt:5]];
+        
+        replaced[indexOfThree] = [NSNumber numberWithInt:4];
+        replaced[indexOfFive] = [NSNumber numberWithInt:4];
+    }
+    return replaced;
 }
 
 
@@ -91,13 +127,10 @@
     for (int i = 0; i < [counts count]; i++) {
         
         if (![counts[i] isEqualToNumber:[NSNumber numberWithInt:0]]) {
-            [reduced addObject:counts[i]];
+            [reduced addObject:(NSNumber *)counts[i]];
         }
-        
     }
-    
     return reduced;
-    
 }
 
 /**
@@ -113,10 +146,13 @@
     int threeCount = [self countWithin:sortedBooks withIndex:3];
     int fourCount = [self countWithin:sortedBooks withIndex:4];
     
-    NSArray *map = @[ @(zeroCount), @(oneCount), @(twoCount), @(threeCount), @(fourCount) ];
+    NSArray *map = @[ [NSNumber numberWithInt:zeroCount],
+                      [NSNumber numberWithInt:oneCount],
+                      [NSNumber numberWithInt:twoCount],
+                      [NSNumber numberWithInt:threeCount],
+                      [NSNumber numberWithInt:fourCount] ];
     
     return [NSMutableArray arrayWithArray:map];
-    
 }
 
 /**
@@ -137,13 +173,11 @@
 - (NSArray *)sortArrayOfNumbers:(NSArray *) input {
     
     return [input sortedArrayUsingSelector:@selector(compare:)];
-    
 }
 
 - (NSArray *)reverseSortArray:(NSArray *) input {
     
     return [[input reverseObjectEnumerator] allObjects];
-    
 }
     
 
