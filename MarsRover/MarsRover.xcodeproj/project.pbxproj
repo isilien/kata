@@ -22,6 +22,7 @@
 		851842C718D10F1F00D49ED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851842A618D10F1E00D49ED9 /* UIKit.framework */; };
 		851842CF18D10F1F00D49ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 851842CD18D10F1F00D49ED9 /* InfoPlist.strings */; };
 		851842D118D10F1F00D49ED9 /* MarsRoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851842D018D10F1F00D49ED9 /* MarsRoverTests.m */; };
+		85EF0C1018D110AD00DC1E4C /* Rover.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF0C0F18D110AD00DC1E4C /* Rover.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		851842CC18D10F1F00D49ED9 /* MarsRoverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarsRoverTests-Info.plist"; sourceTree = "<group>"; };
 		851842CE18D10F1F00D49ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		851842D018D10F1F00D49ED9 /* MarsRoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsRoverTests.m; sourceTree = "<group>"; };
+		85EF0C0E18D110AD00DC1E4C /* Rover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rover.h; sourceTree = "<group>"; };
+		85EF0C0F18D110AD00DC1E4C /* Rover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rover.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		851842A818D10F1E00D49ED9 /* MarsRover */ = {
 			isa = PBXGroup;
 			children = (
+				85EF0C0E18D110AD00DC1E4C /* Rover.h */,
+				85EF0C0F18D110AD00DC1E4C /* Rover.m */,
 				851842B118D10F1E00D49ED9 /* AppDelegate.h */,
 				851842B218D10F1E00D49ED9 /* AppDelegate.m */,
 				851842B418D10F1E00D49ED9 /* Main_iPhone.storyboard */,
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EF0C1018D110AD00DC1E4C /* Rover.m in Sources */,
 				851842BC18D10F1E00D49ED9 /* ViewController.m in Sources */,
 				851842B318D10F1E00D49ED9 /* AppDelegate.m in Sources */,
 				851842AF18D10F1E00D49ED9 /* main.m in Sources */,
@@ -470,6 +476,7 @@
 				851842D618D10F1F00D49ED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		851842D718D10F1F00D49ED9 /* Build configuration list for PBXNativeTarget "MarsRoverTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				851842D918D10F1F00D49ED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
