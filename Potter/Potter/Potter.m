@@ -62,7 +62,7 @@
 - (NSMutableArray *)findSubsetsWithCardinality:(NSMutableArray *) sortedBooks {
     
     NSMutableArray *sets = [NSMutableArray array];
-    NSMutableArray *counts = [self countMap:sortedBooks];
+    NSMutableArray *counts = [self countMap:sortedBooks]; 
     
     counts = [self reduce:counts];
     
