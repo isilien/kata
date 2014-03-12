@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Coordinate.h"
 
 @interface Rover : NSObject {
     
@@ -14,5 +15,7 @@
     
     
 }
+
++ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(Direction *)direction;
 
 @end
