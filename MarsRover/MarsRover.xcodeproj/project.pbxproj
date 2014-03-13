@@ -125,6 +125,8 @@
 			children = (
 				85EF0C0E18D110AD00DC1E4C /* Rover.h */,
 				85EF0C0F18D110AD00DC1E4C /* Rover.m */,
+				85EF0C1718D14B2600DC1E4C /* Grid.h */,
+				85EF0C1818D14B2600DC1E4C /* Grid.m */,
 				85EF0C1118D1120800DC1E4C /* Coordinate.h */,
 				85EF0C1218D1120800DC1E4C /* Coordinate.m */,
 				851842B118D10F1E00D49ED9 /* AppDelegate.h */,
@@ -135,8 +137,6 @@
 				851842BB18D10F1E00D49ED9 /* ViewController.m */,
 				851842BD18D10F1E00D49ED9 /* Images.xcassets */,
 				851842A918D10F1E00D49ED9 /* Supporting Files */,
-				85EF0C1718D14B2600DC1E4C /* Grid.h */,
-				85EF0C1818D14B2600DC1E4C /* Grid.m */,
 			);
 			path = MarsRover;
 			sourceTree = "<group>";

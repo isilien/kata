@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Grid : NSObject
+@interface Grid : NSObject {
+    
+    int width;
+    int height;
+}
+
+@property (nonatomic) int width;
+@property (nonatomic) int height;
+
++ (Grid *)gridWithWidth:(int)width andHeight:(int)height;
 
 @end

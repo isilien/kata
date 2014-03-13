@@ -14,16 +14,21 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    Coordinate *coordinate = [Coordinate coordinateWithX:-10 andY:0];
+	Rover *rover = [Rover roverWithCoordinate:coordinate andDirection:@"N"];
+    
+    NSLog(@"Rover: %@", rover);
+    
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

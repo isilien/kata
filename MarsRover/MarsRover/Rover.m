@@ -10,7 +10,7 @@
 
 @interface Rover()
 
-- (BOOL) validateDirection:(NSString *)dir;
+- (BOOL)validateDirection:(NSString *)dir;
 
 @end
 
@@ -22,9 +22,9 @@
 + (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(NSString *)direction{
     
     Rover *rover = [Rover new];
-    rover.coordinate = coordinate;
     
-    if ([rover validateDirection:direction]) {
+    if (coordinate && [rover validateDirection:direction]) {
+        rover.coordinate = coordinate;
         rover.direction = direction;
         return rover;
     }
@@ -34,12 +34,11 @@
 
 #pragma mark Private Methods
 
-- (BOOL) validateDirection:(NSString *)dir {
+- (BOOL)validateDirection:(NSString *)dir {
     
     dir = [dir uppercaseString];
     
-    if ([dir isEqualToString:@"N"] || [dir isEqualToString:@"S"] || [dir isEqualToString:@"E"] || [dir isEqualToString:@"W"])
-        return YES;
+    if ([dir isEqualToString:@"N"] || [dir isEqualToString:@"S"] || [dir isEqualToString:@"E"] || [dir isEqualToString:@"W"]) return YES;
     
     return NO;
 }
