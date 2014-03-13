@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Rover.h"
 
 @interface MarsRoverTests : XCTestCase
 
@@ -26,9 +27,14 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testRoverCreation {
+    
+    Coordinate *coordinate = [Coordinate coordinateWithX:10 andY:10];
+    Rover *rover = [Rover roverWithCoordinate:coordinate andDirection:@"N"];
+    
+    
+    
+    
 }
 
 @end

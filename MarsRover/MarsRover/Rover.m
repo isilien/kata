@@ -8,6 +8,42 @@
 
 #import "Rover.h"
 
+@interface Rover()
+
+- (BOOL) validateDirection:(NSString *)dir;
+
+@end
+
 @implementation Rover
+
+@synthesize direction, coordinate;
+
+
++ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(NSString *)direction{
+    
+    Rover *rover = [Rover new];
+    rover.coordinate = coordinate;
+    
+    if ([rover validateDirection:direction]) {
+        rover.direction = direction;
+        return rover;
+    }
+
+    return nil;
+}
+
+#pragma mark Private Methods
+
+- (BOOL) validateDirection:(NSString *)dir {
+    
+    dir = [dir uppercaseString];
+    
+    if ([dir isEqualToString:@"N"] || [dir isEqualToString:@"S"] || [dir isEqualToString:@"E"] || [dir isEqualToString:@"W"])
+        return YES;
+    
+    return NO;
+}
+
+
 
 @end

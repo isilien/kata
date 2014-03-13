@@ -12,10 +12,14 @@
 @interface Rover : NSObject {
     
     NSString *direction;
-    
+    Coordinate *coordinate;
     
 }
 
-+ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(Direction *)direction;
+@property (nonatomic, retain) NSString *direction;
+@property (nonatomic, retain) Coordinate *coordinate;
+
++ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(NSString *)direction;
+
 
 @end

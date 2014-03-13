@@ -24,6 +24,7 @@
 		851842D118D10F1F00D49ED9 /* MarsRoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851842D018D10F1F00D49ED9 /* MarsRoverTests.m */; };
 		85EF0C1018D110AD00DC1E4C /* Rover.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF0C0F18D110AD00DC1E4C /* Rover.m */; };
 		85EF0C1318D1120800DC1E4C /* Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF0C1218D1120800DC1E4C /* Coordinate.m */; };
+		85EF0C1918D14B2600DC1E4C /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF0C1818D14B2600DC1E4C /* Grid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		85EF0C0F18D110AD00DC1E4C /* Rover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rover.m; sourceTree = "<group>"; };
 		85EF0C1118D1120800DC1E4C /* Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinate.h; sourceTree = "<group>"; };
 		85EF0C1218D1120800DC1E4C /* Coordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coordinate.m; sourceTree = "<group>"; };
+		85EF0C1718D14B2600DC1E4C /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		85EF0C1818D14B2600DC1E4C /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				851842BB18D10F1E00D49ED9 /* ViewController.m */,
 				851842BD18D10F1E00D49ED9 /* Images.xcassets */,
 				851842A918D10F1E00D49ED9 /* Supporting Files */,
+				85EF0C1718D14B2600DC1E4C /* Grid.h */,
+				85EF0C1818D14B2600DC1E4C /* Grid.m */,
 			);
 			path = MarsRover;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85EF0C1018D110AD00DC1E4C /* Rover.m in Sources */,
+				85EF0C1918D14B2600DC1E4C /* Grid.m in Sources */,
 				851842BC18D10F1E00D49ED9 /* ViewController.m in Sources */,
 				851842B318D10F1E00D49ED9 /* AppDelegate.m in Sources */,
 				85EF0C1318D1120800DC1E4C /* Coordinate.m in Sources */,
