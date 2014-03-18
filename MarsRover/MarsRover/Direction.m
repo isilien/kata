@@ -10,7 +10,7 @@
 
 @interface Direction()
 
-- (BOOL)validateDirection:(Direction *) direction;
+- (BOOL)validateDirection;
 
 @end
 
@@ -26,15 +26,15 @@
     
     NSLog(@"direction: %@", direction.description);
     
-    if ([direction validateDirection:direction]) return direction;
+    if ([direction validateDirection]) return direction;
     
     return nil;
     
 }
 
-- (BOOL)validateDirection:(Direction *)direction {
+- (BOOL)validateDirection {
     
-    if ([direction.description isEqualToString:@"N"] || [direction.description isEqualToString:@"S"] || [direction.description isEqualToString:@"E"] || [direction.description isEqualToString:@"W"]) return YES;
+    if ([self.description isEqualToString:@"N"] || [self.description isEqualToString:@"S"] || [self.description isEqualToString:@"E"] || [self.description isEqualToString:@"W"]) return YES;
 
     return NO;
 }

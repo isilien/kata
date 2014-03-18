@@ -10,7 +10,7 @@
 
 @interface Coordinate()
 
-- (BOOL)validateCoordinate:(Coordinate *)coordinate;
+- (BOOL)validateCoordinate;
 
 @end
 
@@ -24,14 +24,14 @@
     c.x = x;
     c.y = y;
     
-    if ([c validateCoordinate:c]) return c;
+    if ([c validateCoordinate]) return c;
     
     return nil;
 }
 
-- (BOOL)validateCoordinate:(Coordinate *)coordinate {
+- (BOOL)validateCoordinate {
     
-    if (coordinate.x >= 0 && coordinate.y >= 0) return YES;
+    if (self.x >= 0 && self.y >= 0) return YES;
     
     return NO;
 }

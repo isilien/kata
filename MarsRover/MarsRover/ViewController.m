@@ -18,9 +18,15 @@
     
     [super viewDidLoad];
     
-    Direction *dir = [Direction directionWithDescription:@"n"];
+    Grid *grid = [Grid gridWithWidth:10 andHeight:10];
+    Coordinate *coordinate = [Coordinate coordinateWithX:0 andY:0];
+    Direction *direction = [Direction directionWithDescription:@"N"];
     
-    NSLog(@"%@", dir.description);
+    Rover *curiosity = [Rover roverWithCoordinate:coordinate andDirection:direction andGrid:grid];
+    
+    NSArray *instructions = @[@"f", @"f", @"r", @"f", @"f"];
+    
+    [curiosity move:instructions];
     
 }
 

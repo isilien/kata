@@ -10,13 +10,13 @@
 
 @interface Grid()
 
-- (BOOL)validateGrid:(Grid *)grid;
+- (BOOL)validateGrid;
 
 @end
 
 @implementation Grid
 
-@synthesize width, height;
+@synthesize width, height, obstacles;
 
 + (Grid *)gridWithWidth:(int)width andHeight:(int)height {
     
@@ -24,17 +24,40 @@
     grid.width = width;
     grid.height = height;
     
-    if ([grid validateGrid:grid]) return grid;
+    if ([grid validateGrid]) {
+        
+        [grid addObstacles];
+        return grid;
+    }
     
     return nil;
 }
 
-- (BOOL)validateGrid:(Grid *)grid {
+- (BOOL)validateGrid {
     
     // Grid must have positive width and height
-    if (grid.width > 0 && grid.height > 0) return YES;
+    if (self.width > 0 && self.height > 0) return YES;
     
     return NO;
+}
+
+
+//
+// Randomly create 5 obstacles and place them in the grid
+//
+- (void)addObstacles {
+    
+    int randomX = 0;
+    int randomY = 0;
+    
+    for (int i = 0; i < 5; i++) {
+        
+        randomX = arc4random() % self.width;
+        randomY = arc4random() % self.height;
+        
+        [self.obstacles addObject:@[ [NSNumber numberWithInt:randomX], [NSNumber numberWithInt:randomY] ] ];
+    }
+    
 }
 
 @end

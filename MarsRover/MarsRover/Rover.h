@@ -23,7 +23,8 @@
 @property (nonatomic, retain) Coordinate *coordinate;
 @property (nonatomic, retain) Grid *grid;
 
-+ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(Direction *)direction andGrid:(Grid *)grid;
++ (Rover *)roverWithCoordinate:(Coordinate *) coordinate andDirection:(Direction *) direction andGrid:(Grid *) grid;
 
+- (void)move:(NSArray *) instructions;
 
 @end

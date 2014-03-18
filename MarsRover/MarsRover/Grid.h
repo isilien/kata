@@ -12,10 +12,12 @@
     
     int width;
     int height;
+    NSMutableArray *obstacles;
 }
 
 @property (nonatomic) int width;
 @property (nonatomic) int height;
+@property (nonatomic, retain) NSMutableArray *obstacles;
 
 + (Grid *)gridWithWidth:(int)width andHeight:(int)height;
 
