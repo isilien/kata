@@ -24,8 +24,6 @@
     Direction *direction = [Direction new];
     direction.description = [description uppercaseString];
     
-    NSLog(@"direction: %@", direction.description);
-    
     if ([direction validateDirection]) return direction;
     
     return nil;

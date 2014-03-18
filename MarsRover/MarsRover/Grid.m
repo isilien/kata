@@ -11,6 +11,7 @@
 @interface Grid()
 
 - (BOOL)validateGrid;
+- (NSArray *)createRandomObstacles;
 
 @end
 
@@ -18,15 +19,17 @@
 
 @synthesize width, height, obstacles;
 
-+ (Grid *)gridWithWidth:(int)width andHeight:(int)height {
++ (Grid *)gridWithWidth:(int)width andHeight:(int)height andObstacles:(NSArray *) obstacles {
     
     Grid *grid = [Grid new];
     grid.width = width;
     grid.height = height;
+    grid.obstacles = obstacles;
     
     if ([grid validateGrid]) {
         
-        [grid addObstacles];
+        //if (obstacles == nil) grid.obstacles = [grid createRandomObstacles];
+        
         return grid;
     }
     
@@ -45,8 +48,9 @@
 //
 // Randomly create 5 obstacles and place them in the grid
 //
-- (void)addObstacles {
+- (NSArray *)createRandomObstacles {
     
+    NSMutableArray *obs = [NSMutableArray array];
     int randomX = 0;
     int randomY = 0;
     
@@ -55,8 +59,10 @@
         randomX = arc4random() % self.width;
         randomY = arc4random() % self.height;
         
-        [self.obstacles addObject:@[ [NSNumber numberWithInt:randomX], [NSNumber numberWithInt:randomY] ] ];
+        [obs addObject:@[ [NSNumber numberWithInt:randomX], [NSNumber numberWithInt:randomY] ] ];
     }
+    
+    return [NSArray arrayWithArray:obs];
     
 }
 
