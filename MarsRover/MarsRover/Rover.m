@@ -10,23 +10,26 @@
 
 @interface Rover()
 
-- (BOOL)validateDirection:(NSString *)dir;
+- (BOOL)validateInitialLocation;
 
 @end
 
 @implementation Rover
 
-@synthesize direction, coordinate;
+@synthesize direction, coordinate, grid;
 
 
-+ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(NSString *)direction{
++ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(Direction *)direction andGrid:(Grid *)grid {
     
     Rover *rover = [Rover new];
     
-    if (coordinate && [rover validateDirection:direction]) {
+    if (coordinate && grid && direction) {
+        
         rover.coordinate = coordinate;
         rover.direction = direction;
-        return rover;
+        rover.grid = grid;
+        
+        if ([rover validateInitialLocation]) return rover;
     }
 
     return nil;
@@ -34,15 +37,15 @@
 
 #pragma mark Private Methods
 
-- (BOOL)validateDirection:(NSString *)dir {
+/**
+ * Rover's initial location's coordinates cannot increase the grid size
+ */
+- (BOOL)validateInitialLocation {
     
-    dir = [dir uppercaseString];
+    if (self.coordinate.x > self.grid.width || self.coordinate.y > self.grid.height) return NO;
     
-    if ([dir isEqualToString:@"N"] || [dir isEqualToString:@"S"] || [dir isEqualToString:@"E"] || [dir isEqualToString:@"W"]) return YES;
+    return YES;
     
-    return NO;
 }
-
-
 
 @end

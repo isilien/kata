@@ -31,8 +31,8 @@
 
 - (BOOL)validateGrid:(Grid *)grid {
     
-    // Either width or height need to be higher than 0 to have at least a 1-dimensional grid
-    if (grid.width > 0 || grid.height > 0) return YES;
+    // Grid must have positive width and height
+    if (grid.width > 0 && grid.height > 0) return YES;
     
     return NO;
 }

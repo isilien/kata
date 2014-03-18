@@ -8,18 +8,22 @@
 
 #import <Foundation/Foundation.h>
 #import "Coordinate.h"
+#import "Direction.h"
+#import "Grid.h"
 
 @interface Rover : NSObject {
     
-    NSString *direction;
     Coordinate *coordinate;
+    Direction *direction;
+    Grid *grid;
     
 }
 
-@property (nonatomic, retain) NSString *direction;
+@property (nonatomic, retain) Direction *direction;
 @property (nonatomic, retain) Coordinate *coordinate;
+@property (nonatomic, retain) Grid *grid;
 
-+ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(NSString *)direction;
++ (Rover *)roverWithCoordinate:(Coordinate *)coordinate andDirection:(Direction *)direction andGrid:(Grid *)grid;
 
 
 @end

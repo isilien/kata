@@ -22,6 +22,7 @@
 		851842C718D10F1F00D49ED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851842A618D10F1E00D49ED9 /* UIKit.framework */; };
 		851842CF18D10F1F00D49ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 851842CD18D10F1F00D49ED9 /* InfoPlist.strings */; };
 		851842D118D10F1F00D49ED9 /* MarsRoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 851842D018D10F1F00D49ED9 /* MarsRoverTests.m */; };
+		8560E59918D78E41001C22BA /* Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8560E59818D78E41001C22BA /* Direction.m */; };
 		85EF0C1018D110AD00DC1E4C /* Rover.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF0C0F18D110AD00DC1E4C /* Rover.m */; };
 		85EF0C1318D1120800DC1E4C /* Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF0C1218D1120800DC1E4C /* Coordinate.m */; };
 		85EF0C1918D14B2600DC1E4C /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EF0C1818D14B2600DC1E4C /* Grid.m */; };
@@ -58,6 +59,8 @@
 		851842CC18D10F1F00D49ED9 /* MarsRoverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarsRoverTests-Info.plist"; sourceTree = "<group>"; };
 		851842CE18D10F1F00D49ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		851842D018D10F1F00D49ED9 /* MarsRoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarsRoverTests.m; sourceTree = "<group>"; };
+		8560E59718D78E41001C22BA /* Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Direction.h; sourceTree = "<group>"; };
+		8560E59818D78E41001C22BA /* Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Direction.m; sourceTree = "<group>"; };
 		85EF0C0E18D110AD00DC1E4C /* Rover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rover.h; sourceTree = "<group>"; };
 		85EF0C0F18D110AD00DC1E4C /* Rover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rover.m; sourceTree = "<group>"; };
 		85EF0C1118D1120800DC1E4C /* Coordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinate.h; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				85EF0C0F18D110AD00DC1E4C /* Rover.m */,
 				85EF0C1718D14B2600DC1E4C /* Grid.h */,
 				85EF0C1818D14B2600DC1E4C /* Grid.m */,
+				8560E59718D78E41001C22BA /* Direction.h */,
+				8560E59818D78E41001C22BA /* Direction.m */,
 				85EF0C1118D1120800DC1E4C /* Coordinate.h */,
 				85EF0C1218D1120800DC1E4C /* Coordinate.m */,
 				851842B118D10F1E00D49ED9 /* AppDelegate.h */,
@@ -272,6 +277,7 @@
 				85EF0C1918D14B2600DC1E4C /* Grid.m in Sources */,
 				851842BC18D10F1E00D49ED9 /* ViewController.m in Sources */,
 				851842B318D10F1E00D49ED9 /* AppDelegate.m in Sources */,
+				8560E59918D78E41001C22BA /* Direction.m in Sources */,
 				85EF0C1318D1120800DC1E4C /* Coordinate.m in Sources */,
 				851842AF18D10F1E00D49ED9 /* main.m in Sources */,
 			);

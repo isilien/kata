@@ -18,11 +18,9 @@
     
     [super viewDidLoad];
     
-    Coordinate *coordinate = [Coordinate coordinateWithX:-10 andY:0];
-	Rover *rover = [Rover roverWithCoordinate:coordinate andDirection:@"N"];
+    Direction *dir = [Direction directionWithDescription:@"n"];
     
-    NSLog(@"Rover: %@", rover);
-    
+    NSLog(@"%@", dir.description);
     
 }
 
