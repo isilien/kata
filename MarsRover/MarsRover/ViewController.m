@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+@synthesize marsView;
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];

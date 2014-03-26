@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Rover.h"
+#import "MarsView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+    IBOutlet UIView *marsView;
+    
+}
+
+@property (nonatomic, retain) IBOutlet UIView *marsView;
 
 @end

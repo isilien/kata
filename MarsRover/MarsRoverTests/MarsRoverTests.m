@@ -178,7 +178,7 @@
     
     self.coordinate = [Coordinate coordinateWithX:0 andY:0];
     self.direction = [Direction directionWithDescription:@"E"];
-    self.grid = [Grid gridWithWidth:25 andHeight:25 andObstacles:@[ @[@5, @6], @[ @12, @8] ]];
+    self.grid = [Grid gridWithWidth:25 andHeight:25 andObstacles:@[ @[@5, @6], @[@12, @8] ]];
     self.rover = [Rover roverWithCoordinate:self.coordinate andDirection:self.direction andGrid:self.grid];
     
     NSArray *instructions = @[@"f", @"f", @"f", @"f", @"f", @"l", @"b", @"b", @"l", @"f", @"f", @"r", @"b", @"b", @"r", @"b", @"b"];
