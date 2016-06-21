@@ -1,9 +1,9 @@
 //
 //  Item.h
-//  GildedRose
+//  GildedRose-Objc
 //
-//  Created by Isil Demir on 1/22/14.
-//  Copyright (c) 2014 Isil Demir. All rights reserved.
+//  Created by Isil Demir on 1/24/14.
+//
 //
 
 #import <Foundation/Foundation.h>
@@ -21,5 +21,6 @@
 @property (nonatomic) int quality;
 
 +(Item *) itemWithName:(NSString *)name sellIn:(int)sellIn andQuality:(int)quality;
+
 
 @end

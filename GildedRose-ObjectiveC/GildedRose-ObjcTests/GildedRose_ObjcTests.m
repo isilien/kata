@@ -1,18 +1,18 @@
 //
-//  GildedRoseTests.m
-//  GildedRoseTests
+//  GildedRose_ObjcTests.m
+//  GildedRose-ObjcTests
 //
-//  Created by Isil Demir on 1/22/14.
-//  Copyright (c) 2014 Isil Demir. All rights reserved.
+//  Created by Isil Demir on 1/24/14.
+//
 //
 
 #import <XCTest/XCTest.h>
 
-@interface GildedRoseTests : XCTestCase
+@interface GildedRose_ObjcTests : XCTestCase
 
 @end
 
-@implementation GildedRoseTests
+@implementation GildedRose_ObjcTests
 
 - (void)setUp
 {

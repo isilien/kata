@@ -1,14 +1,14 @@
 //
 //  Item.m
-//  GildedRose
+//  GildedRose-Objc
 //
-//  Created by Isil Demir on 1/22/14.
-//  Copyright (c) 2014 Isil Demir. All rights reserved.
+//  Created by Isil Demir on 1/24/14.
+//
 //
 
 #import "Item.h"
 
-@implementation Item
+@implementation Item 
 
 @synthesize name, sellIn, quality;
 
